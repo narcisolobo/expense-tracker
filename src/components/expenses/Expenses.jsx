@@ -1,13 +1,19 @@
 import { Card, Table } from '@mantine/core';
 import ExpenseRow from './ExpenseRow';
+import { useState } from 'react';
+import '../../css/Card.css'
+import ExpenseFilter from './ExpenseFilter';
 
 const alignRight = {
   textAlign: 'right'
 }
 
 function Expenses({ expenses }) {
+  const [yearFilter, setYearFilter] = useState(2020);
+
   return (
-    <Card padding='md' withBorder>
+    <Card padding='md' className='ciso-card'>
+      <ExpenseFilter yearFilter={yearFilter} setYearFilter={setYearFilter} />
       <Table striped highlightOnHover>
         <thead>
           <tr>

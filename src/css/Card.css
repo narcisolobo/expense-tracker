@@ -1,0 +1,11 @@
+/* { marginBottom: '1.5rem', overflow: 'visible', border: '1px solid violet' } */
+.ciso-card {
+    margin-bottom: 1.5rem;
+    overflow: visible;
+    border: 1px solid transparent;
+    transition: border .25s ease;
+}
+
+.ciso-card:hover {
+    border: 1px solid darkviolet;
+}

@@ -1,4 +1,4 @@
-import { currencyFormatter, dateFormatter } from '../utils/formatters';
+import { currencyFormatter, dateFormatter } from '../../utils/formatters';
 
 const alignRight = {
   textAlign: 'right',

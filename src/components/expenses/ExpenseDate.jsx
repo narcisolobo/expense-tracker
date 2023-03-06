@@ -1,5 +1,5 @@
 import { Card, Flex, Title } from '@mantine/core';
-import { dateFormatter } from '../utils/formatters';
+import { dateFormatter } from '../../utils/formatters';
 
 function ExpenseDate({ date }) {
   const { month, day, year } = dateFormatter(date);
