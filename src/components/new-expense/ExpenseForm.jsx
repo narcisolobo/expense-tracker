@@ -4,7 +4,7 @@ import { CurrencyDollar } from 'react-bootstrap-icons';
 import { DateInput } from '@mantine/dates';
 import { v4 as uuidv4 } from 'uuid';
 
-function ExpenseForm({ setExpenses }) {
+function ExpenseForm({ setExpenses, toggle }) {
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState(0);
   const [date, setDate] = useState('');
@@ -65,6 +65,13 @@ function ExpenseForm({ setExpenses }) {
         </Grid.Col>
       </Grid>
       <Flex justify="flex-end" align="center">
+        <Button
+          type="reset"
+          variant="gradient"
+          onClick={toggle}
+          gradient={{ from: 'darkgreen', to: 'green' }}>
+          Cancel
+        </Button>
         <Button
           type="submit"
           variant="gradient"
